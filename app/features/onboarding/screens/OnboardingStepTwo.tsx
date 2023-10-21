@@ -4,8 +4,15 @@ import { icons, images } from 'assets'
 import { Button, Typo } from 'components'
 import { Background, PaginationDots } from '../components'
 import { styles } from './onboarding.styles'
+import { OnboardingNavigationProp } from 'navigation/navigation.types'
+import { onboardingList } from 'navigation/screenLinking/screenLinking'
 
-const OnboardingStepTwo = () => {
+const OnboardingStepTwo = ({ navigation }: OnboardingNavigationProp) => {
+  
+  const handleNavigation = () => {
+    navigation.navigate(onboardingList.onboardingStepThree)
+  }
+
   return (
     <Background>
       <View style={styles.headerContainer}>
@@ -20,8 +27,8 @@ const OnboardingStepTwo = () => {
         resizeMode="contain"
         source={images.onboarding_2_bg}>
         <View style={styles.buttonContainer}>
-          <Button title="Get Started" />
-          <PaginationDots current={1} total={3} style={styles.paginationDots}/>
+          <Button title="Get Started" onPress={handleNavigation} />
+          <PaginationDots current={1} total={3} style={styles.paginationDots} />
         </View>
       </ImageBackground>
     </Background>

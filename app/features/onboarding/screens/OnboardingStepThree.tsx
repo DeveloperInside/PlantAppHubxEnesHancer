@@ -5,9 +5,15 @@ import { Button, Typo } from 'components'
 import { Background, PaginationDots } from '../components'
 import { styles } from './onboarding.styles'
 import { LinearGradient } from 'react-native-gradients'
+import { OnboardingNavigationProp } from 'navigation/navigation.types'
+import { onboardingList } from 'navigation/screenLinking/screenLinking'
 
-const OnboardingStepThree = () => {
+const OnboardingStepThree = ({ navigation }: OnboardingNavigationProp) => {
   const [brushLeftPosition, setBrushLeftPosition] = useState(100)
+
+  const handleNavigation = () => {
+    // navigation.navigate(onboardingList.onboardingStepThree)
+  }
 
   const handleBrushPosition = (event: {
     nativeEvent: { layout: { x: number; width: number } }
