@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
   image: {
     flex: 1,
     width: '100%',
+    justifyContent: 'flex-end',
   },
   buttonContainer: {
     paddingHorizontal: sizes.huge,
@@ -25,4 +26,16 @@ export const styles = StyleSheet.create({
   underline: {
     textDecorationLine: 'underline',
   },
+  brush: {
+    position: 'absolute',
+    resizeMode: 'contain',
+    width: 136,
+    right: 30,
+    top: 18
+  },
+  paginationDots: {
+    alignItems: 'center',
+    marginTop: sizes.massive,
+    marginBottom: sizes.small,
+  }
 })
