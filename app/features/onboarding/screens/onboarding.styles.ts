@@ -15,6 +15,14 @@ export const styles = StyleSheet.create({
     width: '100%',
     justifyContent: 'flex-end',
   },
+  artwork: {
+    position: 'absolute',
+    resizeMode: 'contain',
+    width: 185,
+    height: 185,
+    top: 0,
+    right: 0,
+  },
   buttonContainer: {
     paddingHorizontal: sizes.huge,
   },
@@ -37,5 +45,11 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: sizes.massive,
     marginBottom: sizes.small,
+  },
+  whiteGradient: {
+    position: 'absolute',
+    width: '100%',
+    height: '25%',
+    bottom:0
   }
 })
