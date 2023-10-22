@@ -15,4 +15,6 @@ export const icons = {
   speedometer: require('./icons/speedometer.png'),
   brush: require('./icons/brush.png'),
   search: require('./icons/search.png'),
+  premium_mail: require('./icons/premium_mail.png'),
+  premium_arrow_right: require('./icons/premium_arrow_right.png'),
 }

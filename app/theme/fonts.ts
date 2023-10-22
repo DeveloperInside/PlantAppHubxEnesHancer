@@ -71,5 +71,15 @@ export const fonts = StyleSheet.create({
     fontSize: 24,
     fontWeight: '600',
     fontFamily: 'Rubik Medium',
-  }
+  },
+  upgrade_card_header:{
+    fontSize: 16,
+    fontWeight: '600',
+    fontFamily: 'SF Pro Text'
+  },
+  upgrade_card_desc:{
+    fontSize: 13,
+    // fontWeight: '600',
+    fontFamily: 'SF Pro Display'
+  },
 })
