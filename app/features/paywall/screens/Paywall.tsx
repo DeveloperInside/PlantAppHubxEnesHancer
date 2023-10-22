@@ -7,6 +7,7 @@ import { FeaturesCard, PremiumOptionsCard } from '../components'
 import { SafeAreaView, ScrollView } from 'react-native'
 import { ICardConfigure } from './paywall.types'
 import { RootNavigationProp } from 'navigation/navigation.types'
+import { stacks } from 'navigation/screenLinking/screenLinking'
 
 const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
   const [selectedPurchaseOption, setSelectedPurchaseOption] = useState<1 | 2>(2)
@@ -23,7 +24,7 @@ const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
   }
 
   const handlePurchase = () => {
-    // navigation.navigate('')
+    navigation.navigate(stacks.homeStack.name)
   }
 
   return (
@@ -82,6 +83,7 @@ const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
         <Button
           title={purchaseButtonText[selectedPurchaseOption]}
           style={styles.purchaseButton}
+          onPress={handlePurchase}
         />
         <Box space={sizes.xsmall}>
           <Typo

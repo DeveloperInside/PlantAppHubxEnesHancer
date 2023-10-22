@@ -4,6 +4,7 @@ export interface IBox extends ViewProps {
   space?: number
   row?: boolean
   color?: string
+  flex?: number
   px?: number
   py?: number
   p?: number

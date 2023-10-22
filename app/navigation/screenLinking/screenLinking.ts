@@ -1,9 +1,11 @@
+import Home from 'features/home/screens/Home'
 import {
   OnboardingStepOne,
   OnboardingStepThree,
   OnboardingStepTwo,
 } from 'features/onboarding/screens'
 import Paywall from 'features/paywall/screens/Paywall'
+import HomeStack from 'navigation/stacks/HomeStack'
 import OnboardingStack from 'navigation/stacks/OnboardingStack'
 
 export enum onboardingList {
@@ -13,9 +15,15 @@ export enum onboardingList {
   paywall = 'paywall',
 }
 
+export enum homeList {
+  home = 'home',
+  paywall = 'paywall',
+}
+
 export enum stacksList {
   onboardingStack = 'onboardingStack',
   paywallStack = 'paywallStack',
+  homeStack = 'homeStack',
 }
 
 export const screens = {
@@ -35,7 +43,17 @@ export const screens = {
     paywall: {
       name: onboardingList.paywall,
       component: Paywall,
-    }
+    },
+  },
+  home: {
+    home: {
+      name: homeList.home,
+      component: Home,
+    },
+    paywall: {
+      name: homeList.paywall,
+      component: Paywall,
+    },
   },
 }
 
@@ -43,5 +61,9 @@ export const stacks = {
   onboardingStack: {
     name: stacksList.onboardingStack,
     component: OnboardingStack,
+  },
+  homeStack: {
+    name: stacksList.homeStack,
+    component: HomeStack,
   },
 }

@@ -66,5 +66,10 @@ export const fonts = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
     fontFamily: 'Rubik Medium',
+  },
+  home_welcome: {
+    fontSize: 24,
+    fontWeight: '600',
+    fontFamily: 'Rubik Medium',
   }
 })

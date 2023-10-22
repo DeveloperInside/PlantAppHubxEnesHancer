@@ -17,6 +17,10 @@ const Navigation = () => {
           name={stacks.onboardingStack.name}
           component={stacks.onboardingStack.component}
         />
+        <Stack.Screen
+          name={stacks.homeStack.name}
+          component={stacks.homeStack.component}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )

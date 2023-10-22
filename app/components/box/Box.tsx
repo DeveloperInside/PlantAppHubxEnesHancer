@@ -6,6 +6,7 @@ const Box = ({
   space,
   row,
   radius,
+  flex,
   p,
   px,
   py,
@@ -22,6 +23,7 @@ const Box = ({
       style={[
         {
           gap: space,
+          flex: flex,
           flexDirection: row ? 'row' : 'column',
           padding: p,
           paddingHorizontal: px,

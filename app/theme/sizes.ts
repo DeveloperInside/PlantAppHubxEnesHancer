@@ -1,6 +1,8 @@
 import { RadiusesType, SizesType } from './theme.types'
 
 export const sizes = {
+  atto: 0.1,
+  femto: 0.2,
   pico: 0.5,
   nano: 1,
   micro: 2,
