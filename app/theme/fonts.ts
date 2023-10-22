@@ -36,6 +36,35 @@ export const fonts = StyleSheet.create({
   },
   caption: {
     fontSize: 12,
-    fontFamily: 'Rubik'
+    fontFamily: 'Rubik',
+  },
+  caption_small: {
+    fontSize: 9,
+    fontWeight: '300',
+    fontFamily: 'Rubik Light',
+  },
+  features_card_title: {
+    fontSize: 20,
+    fontWeight: '600',
+    fontFamily: 'Rubik Medium',
+  },
+  features_card_subtitle: {
+    fontSize: 13,
+    fontFamily: 'Rubik',
+  },
+  premium_title: {
+    fontSize: 16,
+    fontWeight: '600',
+    fontFamily: 'Rubik Medium',
+  },
+  premium_desc: {
+    fontSize: 12,
+    fontWeight: '300',
+    fontFamily: 'Rubik Light',
+  },
+  discount: {
+    fontSize: 12,
+    fontWeight: '600',
+    fontFamily: 'Rubik Medium',
   }
 })

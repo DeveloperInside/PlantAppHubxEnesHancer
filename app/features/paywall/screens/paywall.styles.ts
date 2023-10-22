@@ -18,9 +18,18 @@ export const styles = StyleSheet.create({
   subheader: {
     opacity: 0.7,
   },
-  upperContainer: {
+  topContainer: {
     flex: 1,
     paddingLeft: sizes.huge,
     justifyContent: 'flex-end',
   },
+  bottomContainer: {
+    marginTop: -2,
+    backgroundColor: colors.bg_secondary,
+    paddingHorizontal: sizes.huge,
+  },
+  purchaseButton: {
+    marginTop: sizes.huge,
+    marginBottom: sizes.mini,
+  }
 })

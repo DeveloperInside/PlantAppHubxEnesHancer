@@ -1,6 +1,7 @@
-import { RadiusesType, SizesType } from './theme'
+import { RadiusesType, SizesType } from './theme.types'
 
 export const sizes = {
+  pico: 0.5,
   nano: 1,
   micro: 2,
   tiny: 4,

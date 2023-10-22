@@ -4,6 +4,8 @@ import { fonts } from 'theme'
 type VariantProps = keyof typeof fonts
 
 export interface ITypo extends TextProps {
-  variant: VariantProps
+  variant?: VariantProps
   color?: string
+  opacity?: number
+  center?: boolean
 }

@@ -1,5 +1,6 @@
-import { PressableProps } from 'react-native'
+import { PressableProps, ViewProps } from 'react-native'
 
 export interface IButton extends PressableProps {
-  title: string
+  title: string,
+  style?: ViewProps['style']
 }
