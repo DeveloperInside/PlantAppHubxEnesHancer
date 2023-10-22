@@ -23,6 +23,10 @@ const OnboardingStack = () => {
         name={screens.onboarding.onboardingStepThree.name}
         component={screens.onboarding.onboardingStepThree.component}
       />
+      <Stack.Screen
+        name={screens.onboarding.paywall.name}
+        component={screens.onboarding.paywall.component}
+      />
     </Stack.Navigator>
   )
 }

@@ -1,16 +1,21 @@
-import OnboardingStepOne from 'features/onboarding/screens/OnboardingStepOne'
-import OnboardingStepThree from 'features/onboarding/screens/OnboardingStepThree'
-import OnboardingStepTwo from 'features/onboarding/screens/OnboardingStepTwo'
+import {
+  OnboardingStepOne,
+  OnboardingStepThree,
+  OnboardingStepTwo,
+} from 'features/onboarding/screens'
+import Paywall from 'features/paywall/screens/Paywall'
 import OnboardingStack from 'navigation/stacks/OnboardingStack'
 
 export enum onboardingList {
   onboardingStepOne = 'onboardingStepOne',
   onboardingStepTwo = 'onboardingStepTwo',
   onboardingStepThree = 'onboardingStepThree',
+  paywall = 'paywall',
 }
 
 export enum stacksList {
   onboardingStack = 'onboardingStack',
+  paywallStack = 'paywallStack',
 }
 
 export const screens = {
@@ -27,6 +32,10 @@ export const screens = {
       name: onboardingList.onboardingStepThree,
       component: OnboardingStepThree,
     },
+    paywall: {
+      name: onboardingList.paywall,
+      component: Paywall,
+    }
   },
 }
 

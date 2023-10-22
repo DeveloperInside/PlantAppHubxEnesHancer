@@ -1,8 +1,8 @@
-import { View, ImageBackground, Image } from 'react-native'
 import React, { useState } from 'react'
+import { View, ImageBackground, Image } from 'react-native'
 import { icons, images } from 'assets'
-import { Button, Typo } from 'components'
-import { Background, PaginationDots } from '../components'
+import { Button, Typo, Background } from 'components'
+import { PaginationDots } from '../components'
 import { styles } from './onboarding.styles'
 import { LinearGradient } from 'react-native-gradients'
 import { OnboardingNavigationProp } from 'navigation/navigation.types'
@@ -12,7 +12,7 @@ const OnboardingStepThree = ({ navigation }: OnboardingNavigationProp) => {
   const [brushLeftPosition, setBrushLeftPosition] = useState(100)
 
   const handleNavigation = () => {
-    // navigation.navigate(onboardingList.onboardingStepThree)
+    navigation.navigate(onboardingList.paywall)
   }
 
   const handleBrushPosition = (event: {
@@ -50,7 +50,7 @@ const OnboardingStepThree = ({ navigation }: OnboardingNavigationProp) => {
           <LinearGradient angle={270} colorList={gradientColors} />
         </View>
         <View style={styles.buttonContainer}>
-          <Button title="Continue" />
+          <Button title="Continue" onPress={handleNavigation} />
           <PaginationDots current={2} total={3} style={styles.paginationDots} />
         </View>
       </ImageBackground>

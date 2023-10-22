@@ -7,4 +7,5 @@ export const light = {
   text: '#13231B',
   caption: '#899A93',
   white: '#ffffff',
+  black: '#000000',
 }
