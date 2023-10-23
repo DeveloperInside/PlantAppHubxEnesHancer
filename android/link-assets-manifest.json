@@ -1,0 +1,145 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "app/assets/fonts/Rubik-Black.ttf",
+      "sha1": "1d564ff40c2506b66fbae8983674fcc6f50332cf"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-BlackItalic.ttf",
+      "sha1": "033e3229f6548d4b9241406f8613217811d1c484"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-Bold.ttf",
+      "sha1": "0b3d2153576f8ec576af1c89e4793a3dcf0ebb0c"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-BoldItalic.ttf",
+      "sha1": "6e13f686165a725698733d40cdc08beaefc60860"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-ExtraBold.ttf",
+      "sha1": "1647fe9245b610f1b5ac101a3234cc3d8f6051b9"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-ExtraBoldItalic.ttf",
+      "sha1": "82b102196902ef73a92db1aa1da90b16c953841a"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-Italic.ttf",
+      "sha1": "ddba45e218ec4a1bdff496fcfef9932fa30c82c0"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-Light.ttf",
+      "sha1": "2bc14068c355425f472f6a97b69c5c468bc863a3"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-LightItalic.ttf",
+      "sha1": "a3c49755eadf8edf5b479591720d234feb9caaf0"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-Medium.ttf",
+      "sha1": "7b93e52dc59bc6eb3b374b860c203cbe726c3c31"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-MediumItalic.ttf",
+      "sha1": "1eb6e92dea262c4509cbfb66b8638be630dc639f"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-Regular.ttf",
+      "sha1": "9d7091d63f35c9d28518b06566442a02b306980a"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-SemiBold.ttf",
+      "sha1": "01a4b4fee8dbf9802ccb6256fdf53b3a86f2fcec"
+    },
+    {
+      "path": "app/assets/fonts/Rubik-SemiBoldItalic.ttf",
+      "sha1": "d5b3099c28cf63567f3d9eac452fd02fb3721f02"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-Bold.otf",
+      "sha1": "b27d8c428b282fbfd3d40362f4e3ef60afb95ebf"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-BoldItalic.otf",
+      "sha1": "8e96b615ff1f59f8175350483bd897f26e25a278"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-Heavy.otf",
+      "sha1": "330cd932b6dc96b071586409fe36754d5d829955"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-HeavyItalic.otf",
+      "sha1": "f29a62dd89420feb71d609ffb91c470c8492e14a"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-Light.otf",
+      "sha1": "dfc052b7e1aabd14920dbe798a23adcc3a3a521d"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-LightItalic.otf",
+      "sha1": "5c90cf03842aaba33062e8cbea3eb1cee0793748"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-Medium.otf",
+      "sha1": "35b05b13f0c4a63cfc7d23b60c728c5d24cf14fd"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-MediumItalic.otf",
+      "sha1": "2201f9fe8ba96ec444c805d4a8c92849b1e157f2"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-Regular.otf",
+      "sha1": "85b4043974a2a3be5afbcc9ea2becab072d2cd8f"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-RegularItalic.otf",
+      "sha1": "39e16384b14e45d0c0c002183a1d82bcb74c9897"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-Semibold.otf",
+      "sha1": "d8c839390af4265e252fe445b06428c5baeec70d"
+    },
+    {
+      "path": "app/assets/fonts/SF-Pro-Text-SemiboldItalic.otf",
+      "sha1": "add2bddee4b5699a41ed52c7d30f935d5bb72d14"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYBLACKITALIC.OTF",
+      "sha1": "0de83203799afa70ae34ef9e2a223144147e8ad8"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYBOLD.OTF",
+      "sha1": "100e7b7fd24facbca4db38e6d4d7e01c73b82818"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF",
+      "sha1": "094c4f5f6f14d5964efe8ece373ac918674bd498"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF",
+      "sha1": "1bf212b6006b021ceb13f6bdcf37d2be05960678"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYMEDIUM.OTF",
+      "sha1": "a5f5e08dd38cac2f857fb7510f7e92a2399b6f5c"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYREGULAR.OTF",
+      "sha1": "e19df199e78d296e5b6491d4832a76756532ed43"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF",
+      "sha1": "014f13cdf8b948617605822648fe3f9cc6c648e4"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYTHINITALIC.OTF",
+      "sha1": "a54767f9c4b220caf9d0ca246bb29e484ad98dce"
+    },
+    {
+      "path": "app/assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF",
+      "sha1": "e3e3f7af872a6a0fa2d00d5099a7bf0bd4a46473"
+    }
+  ]
+}

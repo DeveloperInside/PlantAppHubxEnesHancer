@@ -23,7 +23,7 @@ export const fonts = StyleSheet.create({
   subheader: {
     fontSize: 17,
     fontWeight: '300',
-    fontFamily: 'Rubik Light',
+    fontFamily: 'Rubik-Light',
   },
   paragraph: {
     fontSize: 16,
@@ -41,12 +41,12 @@ export const fonts = StyleSheet.create({
   caption_small: {
     fontSize: 9,
     fontWeight: '300',
-    fontFamily: 'Rubik Light',
+    fontFamily: 'Rubik-Light',
   },
   features_card_title: {
     fontSize: 20,
     fontWeight: '600',
-    fontFamily: 'Rubik Medium',
+    fontFamily: 'Rubik-Medium',
   },
   features_card_subtitle: {
     fontSize: 13,
@@ -55,22 +55,22 @@ export const fonts = StyleSheet.create({
   premium_title: {
     fontSize: 16,
     fontWeight: '600',
-    fontFamily: 'Rubik Medium',
+    fontFamily: 'Rubik-Medium',
   },
   premium_desc: {
     fontSize: 12,
     fontWeight: '300',
-    fontFamily: 'Rubik Light',
+    fontFamily: 'Rubik-Light',
   },
   discount: {
     fontSize: 12,
     fontWeight: '600',
-    fontFamily: 'Rubik Medium',
+    fontFamily: 'Rubik-Medium',
   },
   home_welcome: {
     fontSize: 24,
     fontWeight: '600',
-    fontFamily: 'Rubik Medium',
+    fontFamily: 'Rubik-Medium',
   },
   upgrade_card_header: {
     fontSize: 16,
