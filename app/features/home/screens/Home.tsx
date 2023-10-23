@@ -60,8 +60,8 @@ const Home = ({navigation}: HomeNavigationProp) => {
           <Box p={sizes.huge}>
             <PremiumCard onPress={handleNavigatePayWall} />
           </Box>
-          <Box style={styles.questionContainer}>
-            <Typo>Get Started</Typo>
+          <Box space={sizes.medium} style={styles.questionContainer}>
+            <Typo variant='question_title'>Get Started</Typo>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <Box row space={sizes.xsmall}>
                 {questions?.data.map(question => (

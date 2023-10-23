@@ -84,7 +84,7 @@ export const fonts = StyleSheet.create({
   question_title: {
     fontSize: 15,
     fontWeight: '600',
-    fontFamily: 'Rubik',
+    fontFamily: 'Rubik-Medium',
   },
   question_subtitle: {
     fontSize: 15,
@@ -94,7 +94,7 @@ export const fonts = StyleSheet.create({
   category_title: {
     fontSize: 16,
     fontWeight: '600',
-    fontFamily: 'Rubik',
+    fontFamily: 'Rubik-Medium',
   },
   tab_button: {
     fontSize: 10,
