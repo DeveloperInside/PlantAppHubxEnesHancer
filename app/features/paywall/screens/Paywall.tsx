@@ -4,7 +4,7 @@ import { images } from 'assets'
 import { styles } from './paywall.styles'
 import { colors, sizes } from 'theme'
 import { FeaturesCard, PremiumOptionsCard } from '../components'
-import { SafeAreaView, ScrollView } from 'react-native'
+import { SafeAreaView, ScrollView, StatusBar } from 'react-native'
 import { ICardConfigure } from './paywall.types'
 import { RootNavigationProp } from 'navigation/navigation.types'
 import { screens, stacks } from 'navigation/screenLinking/screenLinking'
@@ -30,7 +30,8 @@ const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
   }
 
   return (
-    <Box style={{ flex: 1 }}>
+    <Box flex={1}>
+      <StatusBar barStyle='light-content' />
       <Background source={images.paywall_asset_1}>
         <Box style={styles.close}>
           <Box style={styles.closeWrapper} />

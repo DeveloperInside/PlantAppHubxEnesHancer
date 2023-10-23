@@ -1,8 +1,15 @@
-import { ActivityIndicator, FlatList, Image, SafeAreaView, ScrollView } from 'react-native'
-import React from 'react'
-import { Box, Typo } from 'components'
+import {
+  Alert,
+  FlatList,
+  Image,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+} from 'react-native'
+import React, { useEffect } from 'react'
+import { Box, Loading, Typo } from 'components'
 import { images } from 'assets'
-import { appStyles, colors, sizes } from 'theme'
+import { appStyles, sizes } from 'theme'
 import {
   CategoryCard,
   PremiumCard,
@@ -15,7 +22,7 @@ import { useQuestionsQuery } from '../api/questions'
 import { HomeNavigationProp } from 'navigation/navigation.types'
 import { screens } from 'navigation/screenLinking/screenLinking'
 
-const Home = ({navigation}: HomeNavigationProp) => {
+const Home = ({ navigation }: HomeNavigationProp) => {
   const {
     data: categories,
     isLoading: isCategoriesLoading,
@@ -32,8 +39,15 @@ const Home = ({navigation}: HomeNavigationProp) => {
     navigation.navigate(screens.home.paywall.name)
   }
 
+  useEffect(() => {
+    if (isQuestionsError || isCategoriesError) {
+      Alert.alert('Internet Error', 'Please, check your internet connection!')
+    }
+  }, [isQuestionsError, isCategoriesError])
+
   return (
     <SafeAreaView style={appStyles.container}>
+      <StatusBar barStyle="dark-content" />
       <Box flex={1}>
         <Box style={styles.headerContainer}>
           <Box style={styles.headerLeafContainer}>
@@ -61,7 +75,7 @@ const Home = ({navigation}: HomeNavigationProp) => {
             <PremiumCard onPress={handleNavigatePayWall} />
           </Box>
           <Box space={sizes.medium} style={styles.questionContainer}>
-            <Typo variant='question_title'>Get Started</Typo>
+            <Typo variant="question_title">Get Started</Typo>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <Box row space={sizes.xsmall}>
                 {questions?.data.map(question => (
@@ -94,7 +108,7 @@ const Home = ({navigation}: HomeNavigationProp) => {
           </Box>
         </ScrollView>
       </Box>
-      {/* <ActivityIndicator color={colors.primary} size='large' /> */}
+      {(isQuestionsLoading || isCategoriesLoading) && <Loading />}
     </SafeAreaView>
   )
 }
