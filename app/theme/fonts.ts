@@ -94,6 +94,10 @@ export const fonts = StyleSheet.create({
   category_title: {
     fontSize: 16,
     fontWeight: '600',
-    fontFamily: 'Rubik'
-  }
+    fontFamily: 'Rubik',
+  },
+  tab_button: {
+    fontSize: 10,
+    fontFamily: 'Rubik',
+  },
 })

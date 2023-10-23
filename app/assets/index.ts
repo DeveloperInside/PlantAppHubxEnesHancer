@@ -17,4 +17,9 @@ export const icons = {
   search: require('./icons/search.png'),
   premium_mail: require('./icons/premium_mail.png'),
   premium_arrow_right: require('./icons/premium_arrow_right.png'),
+  scan_button: require('./icons/scan_button.png'),
+  home_selected: require('./icons/home_selected.png'),
+  diagnose: require('./icons/diagnose.png'),
+  my_garden: require('./icons/my_garden.png'),
+  profile: require('./icons/profile.png'),
 }
