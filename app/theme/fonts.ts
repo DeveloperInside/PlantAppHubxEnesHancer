@@ -72,14 +72,28 @@ export const fonts = StyleSheet.create({
     fontWeight: '600',
     fontFamily: 'Rubik Medium',
   },
-  upgrade_card_header:{
+  upgrade_card_header: {
     fontSize: 16,
     fontWeight: '600',
-    fontFamily: 'SF Pro Text'
+    fontFamily: 'SF Pro Text',
   },
-  upgrade_card_desc:{
+  upgrade_card_desc: {
     fontSize: 13,
-    // fontWeight: '600',
-    fontFamily: 'SF Pro Display'
+    fontFamily: 'SF Pro Display',
   },
+  question_title: {
+    fontSize: 15,
+    fontWeight: '600',
+    fontFamily: 'Rubik',
+  },
+  question_subtitle: {
+    fontSize: 15,
+    fontWeight: '400',
+    fontFamily: 'Rubik',
+  },
+  category_title: {
+    fontSize: 16,
+    fontWeight: '600',
+    fontFamily: 'Rubik'
+  }
 })

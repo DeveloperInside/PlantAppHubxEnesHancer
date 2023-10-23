@@ -5,8 +5,13 @@ import {
 } from '@react-navigation/native-stack'
 import {
   CompositeScreenProps,
+  NavigatorScreenParams,
 } from '@react-navigation/native'
-import { homeList, onboardingList, stacksList } from './screenLinking/screenLinking'
+import {
+  homeList,
+  onboardingList,
+  stacksList,
+} from './screenLinking/screenLinking'
 
 export type OnboardingParamList = {
   [K in onboardingList]: undefined
@@ -17,7 +22,7 @@ export type HomeParamList = {
 }
 
 export type RootStackParamList = {
-  [K in stacksList]: undefined
+  [K in stacksList]: NavigatorScreenParams<HomeParamList & OnboardingParamList>
 }
 
 export type RootNavigationProp = NativeStackNavigationProp<RootStackParamList>

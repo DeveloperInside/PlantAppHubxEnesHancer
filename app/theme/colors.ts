@@ -10,5 +10,7 @@ export const light = {
   black: '#000000',
   grey_light: '#F6F6F6',
   grey_dark: '#3C3C43',
-  premium_card_bg: '#24201A'
+  premium_card_bg: '#24201A',
+  category_card_bg: '#f4f6f6',
+  category_card_stroke: '#29bb89',
 }
