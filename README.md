@@ -13,7 +13,7 @@ This is a case study for [**HUBX**](https://hubx.co/) company written by Enes Ha
 ## Details
 
 This project created with React Native 0.72.6. \
-Strick type checking features with elastic coding. \
+Strict type checking features with elastic coding. \
 State management -> redux-toolkit \
 API handling -> rtk-query
 
