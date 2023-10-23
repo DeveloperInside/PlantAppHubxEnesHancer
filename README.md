@@ -1,79 +1,121 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is a case study for [**HUBX**](https://hubx.co/) company written by Enes Hancer.
 
-# Getting Started
+# Plant App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<img src="https://hubx.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.b5a0de15.png&w=256&q=75" align="right"
+     alt="Plant App Logo" width="90" height="90">
 
-## Step 1: Start the Metro Server
+- Typescript
+- Clean code
+- Responsive
+- Well-Structured
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Details
 
-To start Metro, run the following command from the _root_ of your React Native project:
+This project created with React Native 0.72.6. \
+Strick type checking features with elastic coding. \
+State management -> redux-toolkit \
+API handling -> rtk-query
 
-```bash
-# using npm
-npm start
+Reactotron configuration has been set up to easily track state changes in the app. You can download and use it from the website for a smoother and more accurate monitoring experience.
+[**Reactotron Releases**](https://github.com/infinitered/reactotron/releases/tag/v2.17.1)
 
-# OR using Yarn
-yarn start
+**Note**: If using an Android device or emulator run the following command to make sure it can connect to Reactotron:
+
+```
+adb reverse tcp:9090 tcp:9090
 ```
 
-## Step 2: Start your Application
+### Feature-based folder structure:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```
+app
+|
+├── assets
+│   ├── docs
+│   ├── fonts
+│   ├── icons
+│   └── images
+├── components
+│   ├── background
+│   ├── box
+│   ├── button
+│   │   ├── Button.tsx
+│   │   ├── button.styles.ts
+│   │   └── button.types.ts
+│   ├── icon
+│   ├── loading
+│   └── typo
+├── constants
+├── features
+│   ├── home
+│   │   ├── api
+│   │   ├── components
+│   │   └── screens
+│   ├── onboarding
+│   └── paywall
+├── helpers
+├── navigation
+├── services
+│   ├── api
+│   └── redux
+└── theme
+    ├── index.ts
+    ├── fonts.ts
+    ├── colors.ts
+    ├── sizes.ts
+    ├── appStyles.ts
+    └── theme.types.ts
 ```
 
-### For iOS
+## Preview
 
-```bash
-# using npm
-npm run ios
+<p float="left">
+  <img src="./app/assets/docs/ss1.png" width="120" />
+  <img src="./app/assets/docs/ss2.png" width="120" />
+  <img src="./app/assets/docs/ss3.png" width="120" />
+  <img src="./app/assets/docs/ss4.png" width="120" />
+  <img src="./app/assets/docs/ss5.png" width="120" />
+</p>
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Getting Started
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Follow these steps to get your project up and running:
 
-## Step 3: Modifying your App
+1. **Clone this repository**
 
-Now that you have successfully run the app, let's modify it.
+2. **Navigate to the project directory:**
+   ```bash
+      cd PlantAppHubxEnesHancer
+   ```
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+3. **Install Dependencies**
+   ```bash
+      npm install
+   ```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+4. **Install Pods for IOS**
+   ```bash
+      npx pod-install
+   ```
 
-## Congratulations! :tada:
+5. **Run the app on an emulator or device:**
+   * For iOS:
 
-You've successfully run and modified your React Native App. :partying_face:
+   ```bash
+      npm run ios
+   ```
 
-### Now what?
+   * For Android:
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+   ```bash
+      npm run android
+   ```
+6. **You're all set! You can now start building your React Native app.**
 
-# Troubleshooting
+## Contributors
+   - [Enes Hancer](https://github.com/DeveloperInside)
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Download the Real App
+   - [PlantApp](https://plantapp.app/)
