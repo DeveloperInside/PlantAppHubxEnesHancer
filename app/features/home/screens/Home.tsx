@@ -70,7 +70,7 @@ const Home = ({ navigation }: HomeNavigationProp) => {
             <SearchBar />
           </Box>
         </Box>
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
           <Box p={sizes.huge}>
             <PremiumCard onPress={handleNavigatePayWall} />
           </Box>

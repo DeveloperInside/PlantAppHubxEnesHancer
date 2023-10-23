@@ -4,12 +4,25 @@ import { images } from 'assets'
 import { styles } from './paywall.styles'
 import { colors, sizes } from 'theme'
 import { FeaturesCard, PremiumOptionsCard } from '../components'
-import { SafeAreaView, ScrollView, StatusBar } from 'react-native'
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  TouchableOpacity,
+} from 'react-native'
 import { ICardConfigure } from './paywall.types'
 import { RootNavigationProp } from 'navigation/navigation.types'
 import { screens, stacks } from 'navigation/screenLinking/screenLinking'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { STORAGE_KEYS } from 'constants/storageKeys'
+import { useAppDispatch, useAppSelector } from 'services/redux/hooks'
+import {
+  selectHideOnboarding,
+  setHideOnboarding,
+} from 'services/redux/slices/hideOnboarding/hideOnboardingSlice'
 
 const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
+  const dispatch = useAppDispatch()
   const [selectedPurchaseOption, setSelectedPurchaseOption] = useState<1 | 2>(2)
 
   const cardConfigures: ICardConfigure[] = [
@@ -23,7 +36,13 @@ const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
     2: 'Try free for 3 days',
   }
 
-  const handlePurchase = () => {
+  const isAppTourCompleted = useAppSelector(selectHideOnboarding)
+  const handleClose = async () => {
+    if (!isAppTourCompleted) {
+      await AsyncStorage.setItem(STORAGE_KEYS.APP_TOUR_COMPLETED, '1')
+      return dispatch(setHideOnboarding())
+    }
+
     navigation.navigate(stacks.homeStack.name, {
       screen: screens.home.home.name,
     })
@@ -31,12 +50,12 @@ const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
 
   return (
     <Box flex={1}>
-      <StatusBar barStyle='light-content' />
+      <StatusBar barStyle="light-content" />
       <Background source={images.paywall_asset_1}>
-        <Box style={styles.close}>
+        <TouchableOpacity style={styles.close} onPress={handleClose}>
           <Box style={styles.closeWrapper} />
           <Icon name={'close'} size={8} />
-        </Box>
+        </TouchableOpacity>
         <Box style={styles.topContainer}>
           <Typo variant={'header_large'} color={colors.white}>
             PlantApp{' '}
@@ -86,7 +105,7 @@ const Paywall = ({ navigation }: { navigation: RootNavigationProp }) => {
         <Button
           title={purchaseButtonText[selectedPurchaseOption]}
           style={styles.purchaseButton}
-          onPress={handlePurchase}
+          onPress={handleClose}
         />
         <Box space={sizes.xsmall}>
           <Typo
